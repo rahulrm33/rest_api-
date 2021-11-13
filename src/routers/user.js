@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const User=require("../schema/user");
-const router=new express.Router() //*important
+const router=new express.Router() 
 
 router.post('/',async(req,res)=>{
     const user = new User(req.body);
